@@ -1,0 +1,181 @@
+body {
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+#main-body {
+width: 100%;
+background-color: var(--primary);
+min-height: 80vh;
+margin-left: 10vw;
+margin-right: 250px;
+margin-bottom: 30px;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+section {
+    margin-left: 20px;
+    align-items: flex-start;
+
+    p, h2, h3 {
+        margin: 0 20px;
+    }
+
+    h2 {
+        margin: 15px 10px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+    
+}
+
+}
+
+.external-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin: 20px 50px;
+    margin-top: 5px;
+    
+    .external-card {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 250px;
+        margin: 10px;
+        border-radius: 20px;
+        background-color: var(--secondary);
+        text-align: center;
+        text-decoration: none;
+        color: var(--text);
+
+        > div {
+            padding: 10px;
+            
+        }
+        .card-title {
+            font-size: 1.5rem;
+            padding-bottom: 0;
+        }
+
+        .card-center {
+            flex: 1;
+            padding: 0;
+        }
+
+        .card-desc {
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+        .card-btn {
+            border: 2px solid white;
+            border-radius: 20px;
+            
+        }
+    }
+}
+
+#sidebar {
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+    width: 200px;
+    
+}
+
+.card-small-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.text-card-small {
+    padding: 15px 20px;
+    margin-top: 10px;
+    background-color: rgb(53, 53, 53);
+    text-decoration: none;
+    color: white;
+    transition: transform 0.2s;
+  
+}
+
+.text-card-small.next {
+    border-top-right-radius: 25px;
+}
+
+.text-card-small.prev {
+    border-top-left-radius: 25px;
+}
+
+.text-card-small.next:hover {
+    transform: translateX(5px);
+}
+
+.text-card-small.prev:hover {
+    transform: translateX(-5px);
+}
+
+.faqs-card {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(99, 127, 250);
+    text-decoration: none;
+
+    > div {
+        position: relative;
+        left: 20px;
+        top: 20px;
+        font-size: 1.5rem;
+        color: white;
+        
+    }
+}
+
+.faqs-card:hover {
+    box-shadow: 2px 2px 0 white inset, -2px -2px 0 white inset;
+}
+
+#ground-container {
+    display: flex;
+
+    .external-card-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:800px) {
+    #main-body {
+        width: 100vw;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #sidebar {
+        position:static;
+        flex-direction: row;
+        width: 100vw;
+        max-width: 100vw;
+        padding: 20px;
+    }
+
+    .card-small-container {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .text-card-small {
+        margin-right: 10px;
+    }
+}

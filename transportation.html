@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Taniti - Transportation</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/category.css">
+  </head>
+  <body>
+      <nav id="site-nav">
+        <div class="nav-end">
+            <a class="nav-btn" href="index.html">Taniti</a>
+        </div>
+        <div class="nav-middle">
+            <a class="nav-btn" href="transportation.html">Transportation</a>
+            <a class="nav-btn" href="lodging.html">Lodging</a>
+            <a class="nav-btn" href="sightseeing.html">Sightseeing</a>
+            <a class="nav-btn" href="food.html">Food</a>
+            <a class="nav-btn" href="entertainment.html">Entertainment</a>
+        </div>
+        <div class="nav-end">
+            <div></div>
+            <a class="nav-btn" href="faqs.html">FAQs</a>
+            <a class="nav-btn" href="index.html">About</a>
+            <div class="nav-btn" id="menu-btn" onclick="toggleMenu()">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </div>
+        </div>
+    </nav>
+    <div id="main-body">
+      <section>
+        <h1>Transportation</h1>
+        <p>Below is information on both international and domestic transport here on Taniti. Be sure to check our <a href="">calender</a> to plan around our local holidays.</p>
+        <h2>International</h2>
+        <p>Taniti offers air and water transport for visitors. An airport expansion is underway, which will allow larger jets within the next few years. </p>
+        <div class="external-card-container">
+          <a class="external-card" href="">
+            <div class="card-title">Air</div>
+            <div class="card-desc">small jet or propeller plane</div>
+            <div class="card-btn">Book Now</div>
+          </a>
+          <a class="external-card" href="">
+            <div class="card-title">Cruise</div>
+            <div class="card-desc">arrives once a week in Yellow Leaf Bay</div>
+            <div class="card-btn">Book Now</div>
+          </a>
+        </div>
+        <h2>Ground Transport</h2>
+        <p>Many areas of Taniti are very walkable, most notably the area surrounding Merriton Landing. Use the interactive map 
+          below to plan routes.
+        </p>
+        <div id="ground-container">
+          <img src="images/map.png" class="interact-map">
+          <div class="external-card-container">
+            <h3>Rentals</h3>
+            <a class="external-card" href="">
+              <div class="card-title">Car</div>
+              <div class="card-desc">local rental agency near the airport</div>
+              <div class="card-btn">Rent Now</div>
+            </a>
+            <a class="external-card" href="">
+              <div class="card-title">Bike</div>
+              <div class="card-desc">helmets included</div>
+              <div class="card-btn">Rent Now</div>
+            </a>
+          </div>
+          
+        </div>
+      </section>
+    </div>
+    <nav id="sidebar">
+      <div class="card-small-container">
+        <a class="text-card-small next" href="lodging.html">Lodging >></a>
+      </div>
+      <a class="faqs-card" href="faqs.html"><div>FAQs</div></a>
+    </nav>
+     <footer>
+        <div><a href="index.html">Home</a></div>
+        <div>-</div>
+        <div><a href="faqs.html">FAQs</a></div>
+        <div>-</div>
+        <div><a href="index.html">About</a></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
