@@ -149,7 +149,6 @@ section {
 
 #ground-container {
     display: flex;
-    flex-wrap: wrap;
 
     .external-card-container {
         flex-direction: column;
